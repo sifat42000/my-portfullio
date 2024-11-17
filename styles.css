@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #ff7eb3, #8e44ad);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Hero Section */
+  /* #hero {
+     background-image: url('https://i.ibb.co.com/wwVSF67/6386-jpg-wh860-1.jpg');
+    height: 70vh;
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #6a11cb;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  
+  #hero .btn:hover {
+    transform: scale(1.1);
+  } */
+
+  #hero {
+    position: relative;
+    background-image: url('https://i.ibb.co.com/wwVSF67/6386-jpg-wh860-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensures overlay is above background but below content */
+}
+
+#hero .hero-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+#hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #6a11cb;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+#hero .btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+  
+  /* About Section */
+  #about {
+    padding: 50px 20px;
+    background: #f7f7f7;
+  }
+
+  .div{
+    width: 1000px;
+  }
+  .h4{
+    color: black;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: spin 10s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+  }
+  
+  .service-cards {
+    /* display: flex;
+    justify-content: center;
+    gap: 20px; */
+
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background: #6a11cb;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #2575fc;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+
+  /* Services Section */
+
+
+
+
+
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #6a11cb;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+  
